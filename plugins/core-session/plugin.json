@@ -1,0 +1,6 @@
+{
+  "name": "core-session",
+  "version": "2.0.0",
+  "description": "会话 rollout：/compact /new /fork /resume /sessions",
+  "main": "index.mjs"
+}

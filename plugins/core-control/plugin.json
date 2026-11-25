@@ -1,0 +1,6 @@
+{
+  "name": "core-control",
+  "version": "2.0.0",
+  "description": "控制面命令：/help /mode /plan /ws /audit /stop /restart",
+  "main": "index.mjs"
+}

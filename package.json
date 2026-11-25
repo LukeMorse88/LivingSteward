@@ -1,0 +1,17 @@
+{
+  "name": "living-steward",
+  "version": "1.0.0",
+  "private": true,
+  "main": "main.cjs",
+  "scripts": {
+    "start": "node ../app/node_modules/electron/cli.js .",
+    "pack": "node pack.mjs"
+  },
+  "dependencies": {
+    "marked": "^15.0.12"
+  },
+  "devDependencies": {
+    "png-to-ico": "^2.1.8",
+    "rcedit": "^5.0.1"
+  }
+}

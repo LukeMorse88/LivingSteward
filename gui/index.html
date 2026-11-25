@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>Living Steward · 生活主管</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <b>Living Steward</b>
+  <span class="sub">生活主管 · everything is a plugin</span>
+  <span id="brains"><i id="b-q"></i>质量脑 <i id="b-s"></i>速度脑</span>
+</header>
+<main>
+  <section class="pane" data-role="cloud">
+    <div class="pane-head"><span>云端监督脑</span><button class="stop" hidden>停止</button></div>
+    <div class="msgs"></div>
+    <div class="composer"><input placeholder="目标 / 命令（/help）"><button class="send">发送</button></div>
+  </section>
+  <section class="pane" data-role="local">
+    <div class="pane-head"><span>本地执行脑</span><button class="stop" hidden>停止</button></div>
+    <div class="msgs"></div>
+    <div class="composer"><input placeholder="子任务 / 命令（/help）"><button class="send">发送</button></div>
+  </section>
+</main>
+<footer>
+  <select id="ws-select" title="工作区"></select>
+  <select id="mode-select" title="审批模式">
+    <option value="full-auto">full-auto</option>
+    <option value="auto-edit">auto-edit</option>
+    <option value="suggest">suggest</option>
+    <option value="plan">plan</option>
+  </select>
+  <span id="ws-path"></span>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

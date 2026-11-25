@@ -1,0 +1,37 @@
+# ── 本机私有 / 运行时数据（绝不入库）────────────────────────
+deepseek.key
+*.key
+whitelist.json
+audit.jsonl
+
+# 会话、配置、审计：仓库只保留目录占�?data/*
+!data/.gitkeep
+
+# ── 便携包大件：模型与二进制不入�?────────────────────────
+brains/
+brains.json
+*.gguf
+*.exe
+*.dll
+*.pak
+*.dat
+resources/
+userdata/
+workspace/
+*.zip
+
+# ── 依赖（用 npm install 还原）────────────────────────────
+node_modules/
+package-lock.json
+
+# ── 系统 / 编辑器垃�?─────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+.gh-auth*
+
+# ── 本机上传统计 ──────────────────────────────────────────
+github-login.cmd
+.gh-token*
+.gh-device*

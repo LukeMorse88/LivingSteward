@@ -1,0 +1,6 @@
+{
+  "name": "self-dev",
+  "version": "2.0.0",
+  "description": "软件开发自身：self_list/self_read/self_write/plugin_reload，全部源码裸露",
+  "main": "index.mjs"
+}

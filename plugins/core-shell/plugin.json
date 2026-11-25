@@ -1,0 +1,6 @@
+{
+  "name": "core-shell",
+  "version": "2.0.0",
+  "description": "PowerShell 执行手脚：exit + 耗时 + 截断标记",
+  "main": "index.mjs"
+}

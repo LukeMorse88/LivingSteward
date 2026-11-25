@@ -1,0 +1,6 @@
+{
+  "name": "core-fs",
+  "version": "2.0.0",
+  "description": "文件系统手脚：读/写/列/回滚 + 覆盖前快照",
+  "main": "index.mjs"
+}

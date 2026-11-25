@@ -1,0 +1,7 @@
+{
+  "name": "core-supervision",
+  "version": "2.0.0",
+  "description": "云监督脑唯一手脚：ask_user / dispatch（内核强制云视图仅此一插件）",
+  "main": "index.mjs",
+  "scope": "cloud"
+}
