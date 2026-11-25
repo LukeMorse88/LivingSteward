@@ -56,6 +56,7 @@ core/
 gui/              渲染层：index.html / app.js / preload.cjs / style.css / vendor
 plugins/          9 个插件（见下）
 data/             会话 rollout / 配置 / 审计（仅保留目录占位）
+docs/             使用手册（便携包说明书，已脱敏）
 ```
 
 **不入库**（见 `.gitignore`）：
@@ -133,6 +134,7 @@ registerService(name, s)  注册常驻服务
 - **`brains.json`**：换模型 / 改端口 / 改 GPU 层数。任何 Vulkan 设备通吃 Intel / AMD / NVIDIA，无 GPU 自动回落 CPU。
   改端口记得同步 `core/kernel.mjs` 里的客户端端口。
 - **`/ws add <名> <路径>`**：增加工作区，白名单按工作区独立。
+- **兜底脑启动命令**：缺少 `brains/brains.json` 时，程序改用环境变量 `STEWARD_QUALITY_CMD` / `STEWARD_SPEED_CMD` 指定的命令拉起本地脑；未设置则跳过。
 
 ## 八、状态
 
@@ -142,4 +144,4 @@ registerService(name, s)  注册常驻服务
 
 ## 九、License
 
-未指定许可证。默认保留所有权利 —— 如需他人复用，请先加 `LICENSE`。
+[Apache License 2.0](LICENSE) © 2026 LukeMorse88

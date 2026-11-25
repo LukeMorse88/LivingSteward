@@ -8,8 +8,9 @@ if (process.env.STEWARD_CDP) app.commandLine.appendSwitch('remote-debugging-port
 app.setName('Living Steward');
 if (app.isPackaged) app.setPath('userData', path.join(path.dirname(process.execPath), 'userdata'));
 
-const QUALITY_CMD = 'D:\\CODEX-REFIT\\qwen\\启动-大模型-质量脑.cmd';
-const SPEED_CMD = 'D:\\CODEX-REFIT\\qwen\\启动-小模型-速度脑.cmd';
+// 兜底启动命令：仅在缺少 brains/brains.json 时使用，由环境变量指定，未设置则跳过
+const QUALITY_CMD = process.env.STEWARD_QUALITY_CMD || '';
+const SPEED_CMD = process.env.STEWARD_SPEED_CMD || '';
 const BRAINS_DIR = path.join(app.isPackaged ? path.dirname(process.execPath) : ROOT, 'brains');
 const BRAINS_CFG = path.join(BRAINS_DIR, 'brains.json');
 
